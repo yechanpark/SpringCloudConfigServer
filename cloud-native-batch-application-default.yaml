@@ -1,18 +1,12 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/coinsupporter?serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/db?serverTimezone=UTC
     username: root
     password: 1234
   batch:
     jdbc:
       initialize-schema: always
-  cloud:
-    config:
-      uri: http://localhost:8888
-      fail-fast: true
-  application:
-    name: cloud-native-batch-application
 
 cloud:
   aws:
