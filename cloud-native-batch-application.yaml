@@ -1,0 +1,35 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/coinsupporter?serverTimezone=UTC
+    username: root
+    password: 1234
+  batch:
+    jdbc:
+      initialize-schema: always
+  cloud:
+    config:
+      uri: http://localhost:8888
+      fail-fast: true
+  application:
+    name: cloud-native-batch-application
+
+cloud:
+  aws:
+    credentials:
+      accessKey: 'AKIATQ2323TIUDBFBRDW'
+      secretKey: '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'
+    region:
+      static: ap-northeast-2
+      auto: false
+    stack:
+      auto: false
+    s3:
+      bucket: ycps3
+
+logging:
+  level:
+    com:
+      amazonaws:
+        util:
+          EC2MetadataUtils: error
