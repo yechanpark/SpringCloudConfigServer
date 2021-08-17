@@ -15,6 +15,8 @@ repositories {
 	mavenCentral()
 }
 
+apply(plugin="io.spring.dependency-management")
+
 extra["springCloudVersion"] = "2020.0.3"
 
 dependencies {
