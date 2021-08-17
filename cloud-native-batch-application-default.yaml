@@ -4,7 +4,6 @@ spring:
     url: jdbc:mysql://localhost:3306/coinsupporter?serverTimezone=UTC
     username: root
     password: 1234
-    type: com.zaxxer.hikari.HikariDataSource
   batch:
     jdbc:
       initialize-schema: always
