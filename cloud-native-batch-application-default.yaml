@@ -11,8 +11,8 @@ spring:
 cloud:
   aws:
     credentials:
-      accessKey: 'AKIATQ2323TIUDBFBRDW'
-      secretKey: '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'
+      accessKey: 'AWS 계정 ACCESS KEY'
+      secretKey: 'AWS 계정 SECRET KEY'
     region:
       static: ap-northeast-2
       auto: false
@@ -24,7 +24,7 @@ cloud:
 eureka:
   client:
     service-url:
-      default-zone: http://localhost:8761/eureka/
+      default-zone: http://localhost:8761/eureka/ # 유레카 서버
 
 logging:
   level:
